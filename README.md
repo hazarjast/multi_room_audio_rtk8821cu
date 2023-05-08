@@ -69,7 +69,7 @@ reboot now
 ```
 To confirm which number sound card to use cat '/proc/asound/cards' which will list all that are available.
 
-Once rebooted,  use 'alsamixer' on each client to ensure levels for 'PCM', 'Line', and 'Master' are turned up and any 'auto-mute' feature is deactivated. From there we can use iPeng on iOS or iPadOS (cost: $8.99 USD) to control LMServer and select output to our clients as desired.
+Once rebooted,  use 'alsamixer' on each client to ensure levels for 'PCM', 'Line', and 'Master' are turned up and any 'auto-mute' feature is deactivated. From there we can use iPeng on iOS or iPadOS (cost: $8.99 USD) to control LMServer and select output to our clients as desired. For Android there is: https://play.google.com/store/apps/details?id=uk.org.ngo.squeezer&hl=en_US&gl=US&pli=1 .
 
 ## Acknowledgements
 Shout out to **morrownr** for their excellent Realtek 8821cu driver repository which is the cornerstone of this project. Also, thanks to all the great folks that continue to develop and support Logitech Media Server (Squeezebox Server) especially **michaelherger** who continues to make Spotify LMS integration possible.
