@@ -70,3 +70,6 @@ reboot now
 To confirm which number sound card to use cat '/proc/asound/cards' which will list all that are available.
 
 Once rebooted,  use 'alsamixer; to ensure levels for 'PCM', 'Line', and 'Master' are turned up and any 'auto-mute' feature is deactivated. From there we can use iPeng on iOS or iPadOS (cost: $8.99 USD) to control LMServer.
+
+##Thanks
+Shout out to **morrownr** for his excellent Realtek 8821cu driver repository which is the cornerstone of this project!
