@@ -1,7 +1,7 @@
 # LMS / Squeezebox Multi-Room Audio Deployment using Fujitsu Futro S520n Thin Clients and Realtek 8821cu Wi-Fi Adapters Under Ubuntu Server 22.04.1
 With the deprecation/death of inexpensive Wi-Fi audio adapters such as Chromecast Audio and Echo Link, I was searching for a cost effective means of synced, multi-room audio using my own speakers which could be controlled from my iOS devices. While I have some of my own media, mostly I stream music using Spotify so I needed something which ideally supported Spotify Connect integration as well.
 
-My searches on this topic ultimately led me to Squeezebox / Logitech Media Server (LMS) which supports a wide variety of hardware and operating systems and checked the boxes I was looking for. The instructions in this repository cover an LMS multi-room audio deployment leveraging inexpensive x86_64 hardware and wi-fi adapters for the speaker clients. My local IT refurbisher was unloading a pallet of older Fujitsu thin clients which cost less than $12 USD each and I was able to find Realtek 8821cu based Wi-Fi 5 adapters which support both 2.4Ghz and 5Ghz on eBay for ~$5 USD. In my case the server is connected via Ethernet and only the clients use Wi-Fi, thus, a 3 room setup cost less than $65 USD. Basically, a poor man's Sonos ;)
+My searches on this topic ultimately led me to Squeezebox Server / Logitech Media Server (LMS) which supports a wide variety of hardware and operating systems and checked the boxes I was looking for. The instructions in this repository cover an LMS multi-room audio deployment leveraging inexpensive x86_64 hardware and wi-fi adapters for the speaker clients. My local IT refurbisher was unloading a pallet of older Fujitsu thin clients which cost less than $12 USD each and I was able to find Realtek 8821cu based Wi-Fi 5 adapters which support both 2.4Ghz and 5Ghz on eBay for ~$5 USD. In my case the server is connected via Ethernet and only the clients use Wi-Fi, thus, a 3 room setup cost less than $65 USD. Basically, a poor man's Sonos ;)
 
 ## LMServer
 
@@ -71,5 +71,6 @@ To confirm which number sound card to use cat '/proc/asound/cards' which will li
 
 Once rebooted,  use 'alsamixer; to ensure levels for 'PCM', 'Line', and 'Master' are turned up and any 'auto-mute' feature is deactivated. From there we can use iPeng on iOS or iPadOS (cost: $8.99 USD) to control LMServer.
 
-##Thanks
-Shout out to **morrownr** for his excellent Realtek 8821cu driver repository which is the cornerstone of this project!
+## Acknowledgements
+Shout out to **morrownr** for his excellent Realtek 8821cu driver repository which is the cornerstone of this project. Also, thanks to all the great folks that continue to develop and support Logitech Media Server (Squeezebox Server) and especially **michaelherger** who continues to make Spotify integration possible with LMS
+
