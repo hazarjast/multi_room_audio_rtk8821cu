@@ -72,5 +72,5 @@ To confirm which number sound card to use cat '/proc/asound/cards' which will li
 Once rebooted,  use 'alsamixer; to ensure levels for 'PCM', 'Line', and 'Master' are turned up and any 'auto-mute' feature is deactivated. From there we can use iPeng on iOS or iPadOS (cost: $8.99 USD) to control LMServer.
 
 ## Acknowledgements
-Shout out to **morrownr** for his excellent Realtek 8821cu driver repository which is the cornerstone of this project. Also, thanks to all the great folks that continue to develop and support Logitech Media Server (Squeezebox Server) and especially **michaelherger** who continues to make Spotify integration possible with LMS
+Shout out to **morrownr** for his excellent Realtek 8821cu driver repository which is the cornerstone of this project. Also, thanks to all the great folks that continue to develop and support Logitech Media Server (Squeezebox Server) especially **michaelherger** who continues to make Spotify integration possible with LMS
 
