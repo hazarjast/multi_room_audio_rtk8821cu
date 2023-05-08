@@ -6,10 +6,11 @@ My searches on this topic ultimately led me to Squeezebox / Logitech Media Serve
 ## LMServer
 
 1. Download and use Rufus to write Ubuntu 22.04.1 .iso to a USB thumbdrive and install.
-2. Download .deb file from https://mysqueezebox.com/download and install with 'dpkg -i'.
-3. Run initial LMS setup (http://lmserver:9000). Enable Spotty plugin. Go to settings of Spotty plugin to connect to Spotify.
-4. Go to 'Advanced > File Types > Spotty' and set 'Ogg Vorbis' & 'FLAC' to 'Disabled'. Failing to do this leads to dropouts and erratic behavior with Spotify Connect in my testing.
-5. Proceed with client setup steps below.
+2. Perform 'sudo apt update && sudo apt upgrade -y' and reboot.
+3. Download .deb file from https://mysqueezebox.com/download and install with 'dpkg -i'.
+4. Run initial LMS setup (http://lmserver:9000). Enable Spotty plugin. Go to settings of Spotty plugin to connect to Spotify.
+5. Go to 'Advanced > File Types > Spotty' and set 'Ogg Vorbis' & 'FLAC' to 'Disabled'. Failing to do this leads to dropouts and erratic behavior with Spotify Connect in my testing.
+6. Proceed with client setup steps below.
 
 
 ## LMClients
