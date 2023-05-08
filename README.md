@@ -35,7 +35,7 @@ select-editor
 [select 'vi-basic', option '2']
 cd /etc/netplan
 cp 00-installer-config.yaml 00-installer-config.yaml.orig
-ip a show |grep -o 'wl.*:' | tr -d ':' >> 00-installer-config.yaml
+ip a show |grep -o 'wl.*:' >> 00-installer-config.yaml
 ```
 
 Finish adding wifi config which should look like the below, replacing or adding SSIDs where needed (and setting ethernet iface to 'optional: true'):
