@@ -63,7 +63,7 @@ cat <<EOF | sudo tee /etc/asound.conf
 defaults.pcm.card 1 
 defaults.ctl.card 1
 EOF
-adduser lmclient[n] audio
+adduser [lmclient_user] audio
 hostnamectl set-chassis vm
 reboot now
 ```
