@@ -57,7 +57,7 @@ Apply netplan changes once finished:
 netplan apply
 ```
 
-Adjust ALSA default sound card to use the analog outputs instead of trying to use the non-existent HDMI audio outputs via the AMD integrated graphics (there's not even an HDMI output on these units). Also add our 'lmclient[n]' user to the 'audio' group for easy changes of levels with 'alsamixer' and change the power button behavior to perform graceful shutdowns:
+Adjust ALSA default sound card to use the analog outputs instead of trying to use the non-existent HDMI audio outputs via the AMD integrated graphics (there's not even an HDMI output on these units). Also add our 'lmclient' default OS user to the 'audio' group for easy changes of levels with 'alsamixer' and change the power button behavior to perform graceful shutdowns:
 ```
 cat <<EOF | sudo tee /etc/asound.conf  
 defaults.pcm.card 1 
